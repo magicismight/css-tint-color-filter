@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cougar Pages</title>
+
+  <link href="index.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <p>
+    A tool based on <a href="https://codepen.io/sosuke/pen/Pjoqqp">CSS filter generator to convert from black to target hex color</a> which can generate a CSS filter to convert any color into any color
+  </p>
+  <fieldset>
+    <p>
+      <label>Source color</label> <input class="source" type="text" placeholder="source hex" value="#00a4d6"/>
+    </p>
+    <p>
+      <label>Target color</label> <input class="target" type="text" placeholder="target hex" value="#7100ff"/>
+    </p>
+    <button class="execute">Compute Filters</button>
+  </fieldset>
+
+  <p>Source pixel, color applied through CSS <code>background-color</code>:</p>
+  <div class="pixel sourcePixel"></div>
+
+  <p>Real pixel, color applied through CSS <code>background-color</code>:</p>
+  <div class="pixel realPixel"></div>
+
+  <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+  <div class="pixel filterPixel"></div>
+
+  <p class="filterDetail"></p>
+  <p class="lossDetail"></p>
+</body>
+
+</html>
